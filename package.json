@@ -2,7 +2,10 @@
   "name": "@DrunkenBits/react-navs",
   "version": "0.0.0",
   "description": "Presentation-less component to build robust navs / tabs",
-  "keywords": ["react", "tabs"],
+  "keywords": [
+    "react",
+    "tabs"
+  ],
   "author": "Luca Barone <baro.luc@gmail.com>",
   "repository": {
     "type": "git",
@@ -11,5 +14,13 @@
   "bugs": {
     "url": "https://github.com/DrunkenBits/react-navs/issues"
   },
-  "homepage": "https://github.com/DrunkenBits/react-navs#readme"
+  "homepage": "https://github.com/DrunkenBits/react-navs#readme",
+  "peerDependencies": {
+    "prop-types": ">=15",
+    "react": ">=15"
+  },
+  "devDependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1"
+  }
 }
