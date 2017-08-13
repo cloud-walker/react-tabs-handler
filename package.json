@@ -28,6 +28,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "sanitize.css": "^5.0.0",
     "styled-components": "^2.1.2"
   }
 }
