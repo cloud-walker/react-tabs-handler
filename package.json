@@ -15,13 +15,19 @@
     "url": "https://github.com/DrunkenBits/react-navs/issues"
   },
   "homepage": "https://github.com/DrunkenBits/react-navs#readme",
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
   "peerDependencies": {
     "prop-types": ">=15",
     "react": ">=15"
   },
   "devDependencies": {
+    "@storybook/react": "^3.2.4",
     "prettier": "^1.5.3",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "styled-components": "^2.1.2"
   }
 }
