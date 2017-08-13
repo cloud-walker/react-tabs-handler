@@ -6,16 +6,16 @@ import Component from './index'
 
 const ifActive = (a, b) => ({isActive}) => (isActive ? a : b)
 
+const Tab = styled.button`
+  cursor: pointer;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: ${ifActive('lightblue', 'inherit')};
+`
+const Panel = styled.div`display: ${ifActive('block', 'none')};`
+
 storiesOf(Component.displayName, module)
   .add('basic', () => {
-    const Tab = styled.button`
-      cursor: pointer;
-      outline: 0;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background-color: ${ifActive('lightblue', 'inherit')};
-    `
-    const Panel = styled.div`display: ${ifActive('block', 'none')};`
-
     return (
       <Component>
         {({getTabProps, getPanelProps}) =>
@@ -129,6 +129,58 @@ storiesOf(Component.displayName, module)
               ipsam ratione, quisquam expedita sint ab.
             </Panel>
           </Context>}
+      </Component>
+    )
+  })
+  .add('inception', () => {
+    return (
+      <Component>
+        {({getTabProps, getPanelProps}) => {
+          const pizzaProps = getTabProps()
+          const sushiProps = getTabProps()
+
+          return (
+            <div>
+              <div>
+                <Tab {...pizzaProps}>🍕</Tab>
+                <Tab {...sushiProps}>🍣</Tab>
+                <Tab {...getTabProps()}>🌮</Tab>
+              </div>
+
+              <div>
+                <Panel {...getPanelProps()}>
+                  <div>Pizzaaaaaaaaaaaaaaaaaa</div>
+
+                  <Component>
+                    {({getTabProps, getPanelProps}) => {
+                      return (
+                        <div>
+                          <div>
+                            <Tab {...getTabProps()}>🍕</Tab>
+                            <Tab {...getTabProps()}>🍣</Tab>
+                            <Tab {...getTabProps()}>🌮</Tab>
+                          </div>
+                          <div>
+                            <Panel {...getPanelProps()}>
+                              Pizzaaaaaaaaaaaaaaaaaa
+                            </Panel>
+                            <Panel {...getPanelProps()}>Sushiii</Panel>
+                            <Panel {...getPanelProps()}>
+                              <div>Tacos!</div>
+                              <Tab {...sushiProps}>Return to sushi..</Tab>
+                            </Panel>
+                          </div>
+                        </div>
+                      )
+                    }}
+                  </Component>
+                </Panel>
+                <Panel {...getPanelProps()}>Sushiii</Panel>
+                <Panel {...getPanelProps()}>Tacos!</Panel>
+              </div>
+            </div>
+          )
+        }}
       </Component>
     )
   })
