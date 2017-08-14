@@ -24,10 +24,16 @@
   },
   "devDependencies": {
     "@storybook/react": "^3.2.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
     "prettier": "^1.5.3",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "rollup": "^0.47.4",
+    "rollup-plugin-babel": "^3.0.1",
     "sanitize.css": "^5.0.0",
     "styled-components": "^2.1.2"
   }
