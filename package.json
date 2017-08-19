@@ -5,6 +5,8 @@
   "publishConfig": {
     "access": "public"
   },
+  "jsnext:main": "dist/react-navs.es.js",
+  "module": "dist/react-navs.es.js",
   "name": "@cloudwalker/react-navs",
   "version": "0.1.0-0",
   "description": "Presentation-less component to build robust navs / tabs",
