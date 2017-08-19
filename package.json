@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "prepublish": "rollup -c",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "publishConfig": {
