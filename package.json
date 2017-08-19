@@ -1,6 +1,6 @@
 {
   "name": "@drunkenbits/react-navs",
-  "version": "0.0.0",
+  "version": "0.1.0-0",
   "description": "Presentation-less component to build robust navs / tabs",
   "keywords": [
     "react",
