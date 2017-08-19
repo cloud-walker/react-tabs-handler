@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "name": "@cloudwalker/react-navs",
   "version": "0.1.0-0",
   "description": "Presentation-less component to build robust navs / tabs",
@@ -15,9 +21,6 @@
     "url": "https://github.com/DrunkenBits/react-navs/issues"
   },
   "homepage": "https://github.com/DrunkenBits/react-navs#readme",
-  "scripts": {
-    "storybook": "start-storybook -p 9001 -c .storybook"
-  },
   "peerDependencies": {
     "prop-types": ">=15",
     "react": ">=15"
