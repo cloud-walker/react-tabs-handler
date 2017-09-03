@@ -4,7 +4,9 @@
   "description": "Presentation-less component to build robust tabs",
   "scripts": {
     "prepublish": "rollup -c",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "ghpages-deploy": "storybook-to-ghpages"
   },
   "publishConfig": {
     "access": "public"
@@ -30,6 +32,7 @@
   },
   "devDependencies": {
     "@storybook/react": "^3.2.4",
+    "@storybook/storybook-deployer": "^2.0.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.6.0",
