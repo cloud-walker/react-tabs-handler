@@ -1,1 +1,1 @@
-export {default} from './Navs'
+export {default} from './TabsHandler'

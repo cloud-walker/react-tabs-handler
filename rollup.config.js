@@ -6,11 +6,10 @@ import uglify from 'rollup-plugin-uglify'
 const minify = false
 
 export default {
-  entry: 'source/index.js',
-  targets: [{dest: `dist/react-navs.es.js`, format: 'es'}],
+  input: 'source/index.js',
+  output: {file: `dist/react-tabs-handler.es.js`, format: 'es'},
   exports: 'named',
-  moduleName: 'ReactNavs',
-  format: 'es',
+  name: 'TabsHandler',
   external: ['react', 'prop-types'],
   plugins: [
     nodeResolve({jsnext: true, main: true}),

@@ -1,5 +1,5 @@
-# react-tabs
-Presentation-less component to build robust navs / tabs
+# react-tabs-handler
+Presentation-less component to build robust tabs
 
 ## The why
 The component take inspiration from [downshift](downshift) (an awesome [Kent C. Dodds](kent)'s component for dropdown / select / combobox, etc.) and try to accomplish the same thing for the tabs problem presented in the ["Compound Components"](compound-components-talk) talk from [Ryan Florence](ryan), using the "getter props" pattern instead.
@@ -12,13 +12,13 @@ The component has not been released, yet.
 ## Usage
 ```javascript
 import React from 'react'
-import Navs from 'react-navs'
+import TabsHandler from 'react-tabs-handler'
 
 const Component = () => {
   return (
     <div>
       <h1>Awesome application</h1>
-      <Navs>
+      <TabsHandler>
         {({getTabProps, getPanelProps}) => {
           const pizzaPanelProps = getPanelProps()
           const sushiPanelProps = getPanelProps()
@@ -60,7 +60,7 @@ const Component = () => {
             </div>
           )
         }}
-      </Navs>
+      </TabsHandler>
     </div>
   )
 }

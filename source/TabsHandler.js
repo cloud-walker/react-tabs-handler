@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Component = class extends React.Component {
-  static displayName = 'Navs'
+  static displayName = 'TabsHandler'
   static propTypes = {
     children: PropTypes.func.isRequired,
   }
