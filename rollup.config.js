@@ -10,9 +10,14 @@ export default {
   output: [
     {file: `dist/react-tabs-handler.es.js`, format: 'es'},
     {
+      file: 'dist/react-tabs-handler.js',
+      format: 'iife',
+      name: 'TabsHandler',
+      globals: {react: 'React', 'prop-types': 'PropTypes'},
+    },
+    {
       file: 'dist/react-tabs-handler.umd.js',
       format: 'umd',
-      name: 'TabsHandler',
       globals: {react: 'React', 'prop-types': 'PropTypes'},
     },
   ],
