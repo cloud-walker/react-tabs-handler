@@ -9,6 +9,7 @@ export default {
   input: 'source/index.js',
   output: [
     {file: `dist/react-tabs-handler.es.js`, format: 'es'},
+    {file: `dist/react-tabs-handler.cjs.js`, format: 'cjs'},
     {
       file: 'dist/react-tabs-handler.js',
       format: 'iife',
