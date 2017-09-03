@@ -1,6 +1,6 @@
 {
   "name": "@cloudwalker/react-tabs-handler",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Presentation-less component to build robust tabs",
   "scripts": {
     "prepublish": "rollup -c",
@@ -14,7 +14,10 @@
   "main": "dist/react-tabs-handler.cjs.js",
   "jsnext:main": "dist/react-tabs-handler.es.js",
   "module": "dist/react-tabs-handler.es.js",
-  "keywords": ["react", "tabs"],
+  "keywords": [
+    "react",
+    "tabs"
+  ],
   "author": "Luca Barone <baro.luc@gmail.com>",
   "repository": {
     "type": "git",
