@@ -7,7 +7,15 @@ const minify = false
 
 export default {
   input: 'source/index.js',
-  output: {file: `dist/react-tabs-handler.es.js`, format: 'es'},
+  output: [
+    {file: `dist/react-tabs-handler.es.js`, format: 'es'},
+    {
+      file: 'dist/react-tabs-handler.umd.js',
+      format: 'umd',
+      name: 'TabsHandler',
+      globals: {react: 'React', 'prop-types': 'PropTypes'},
+    },
+  ],
   exports: 'named',
   name: 'TabsHandler',
   external: ['react', 'prop-types'],
