@@ -1,6 +1,6 @@
 {
   "name": "@cloudwalker/react-tabs-handler",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Presentation-less component to build robust tabs",
   "scripts": {
     "prepublish": "rollup -c",
