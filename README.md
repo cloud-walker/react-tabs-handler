@@ -2,12 +2,20 @@
 Presentation-less component to build robust tabs.
 
 ## The why
-This component takes inspiration from [downshift](downshift) (an awesome component from [Kent C. Dodds](kent) for dropdown / select / combobox, etc.) and tries to apply the same solution to the tabs problem presented in the ["Compound Components"](compound-components-talk) talk from [Ryan Florence](ryan) by using the "getter props" pattern instead.
+This component takes inspiration from [downshift](https://github.com/paypal/downshift) (an awesome component from [Kent C. Dodds](https://github.com/kentcdodds) for dropdown / select / combobox, etc.) and tries to apply the same solution to the tabs problem presented in the ["Compound Components"](https://www.youtube.com/watch?v=hEGg-3pIHlE) talk from [Ryan Florence](https://github.com/ryanflorence) by using the "getter props" pattern instead.
 
 Even if the frontend development experience has evolved positively in the last years, it's still hard to find a good component that does the job, it's flexible yet it's robust enough for production use. The aim of this project is to fill this gap.
 
 ## Installation
-The component has not been released, yet.
+This module is distributed via [npm][npm] which is bundled with [node][node] and
+should be installed as one of your project's `dependencies`:
+
+```
+npm install --save @cloudwalker/react-tabs-handler
+```
+
+> This package also depends on `react` and `prop-types`. Please make sure you
+> have those installed as well.
 
 ## Usage
 ```javascript
@@ -65,8 +73,3 @@ const Component = () => {
   )
 }
 ```
-
-[downshift]: https://github.com/paypal/downshift
-[kent]: https://github.com/kentcdodds
-[ryan]: https://github.com/ryanflorence
-[compound-components-talk]: https://www.youtube.com/watch?v=hEGg-3pIHlE
